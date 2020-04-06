@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="PublicHolidaysConstantsInterface.php" path="/Interfaces/De">
+    <totals>
+      <lines total="75" comments="33" code="42" executable="0" executed="0" percent="0"/>
+      <methods count="0" tested="0" percent="0"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="0" tested="0" percent="0"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="3">
+        <token name="T_DOC_COMMENT"> * Copyright (c) 2018.</token>
+      </line>
+      <line no="4">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="5">
+        <token name="T_DOC_COMMENT"> * Created By</token>
+      </line>
+      <line no="6">
+        <token name="T_DOC_COMMENT"> * @author Mike Hartl</token>
+      </line>
+      <line no="7">
+        <token name="T_DOC_COMMENT"> * @copyright 2018  Mike Hartl All rights reserved</token>
+      </line>
+      <line no="8">
+        <token name="T_DOC_COMMENT"> * @license  The source code of this document is proprietary work, and is not licensed for distribution or use.</token>
+      </line>
+      <line no="9">
+        <token name="T_DOC_COMMENT"> * @created 13.06.18</token>
+      </line>
+      <line no="10">
+        <token name="T_DOC_COMMENT"> * @version 0.0.1</token>
+      </line>
+      <line no="11">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="12">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="13"/>
+      <line no="14">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidayInspector</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Interfaces</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">De</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="15"/>
+      <line no="16">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="17">
+        <token name="T_DOC_COMMENT"> * BW = Baden-W&#xFC;rttemberg&lt;br&gt;</token>
+      </line>
+      <line no="18">
+        <token name="T_DOC_COMMENT"> * BY = Bayern&lt;br&gt;</token>
+      </line>
+      <line no="19">
+        <token name="T_DOC_COMMENT"> * BE = Berlin&lt;br&gt;</token>
+      </line>
+      <line no="20">
+        <token name="T_DOC_COMMENT"> * BB = Brandenburg&lt;br&gt;</token>
+      </line>
+      <line no="21">
+        <token name="T_DOC_COMMENT"> * HB = Bremen&lt;br&gt;</token>
+      </line>
+      <line no="22">
+        <token name="T_DOC_COMMENT"> * HH = Hamburg&lt;br&gt;</token>
+      </line>
+      <line no="23">
+        <token name="T_DOC_COMMENT"> * HE = Hessen&lt;br&gt;</token>
+      </line>
+      <line no="24">
+        <token name="T_DOC_COMMENT"> * MV = Mecklenburg-Vorpommern&lt;br&gt;</token>
+      </line>
+      <line no="25">
+        <token name="T_DOC_COMMENT"> * NI = Niedersachsen&lt;br&gt;</token>
+      </line>
+      <line no="26">
+        <token name="T_DOC_COMMENT"> * NW = Nordrhein-Westfalen&lt;br&gt;</token>
+      </line>
+      <line no="27">
+        <token name="T_DOC_COMMENT"> * RP = Rheinland-Pfalz&lt;br&gt;</token>
+      </line>
+      <line no="28">
+        <token name="T_DOC_COMMENT"> * SL = Saarland&lt;br&gt;</token>
+      </line>
+      <line no="29">
+        <token name="T_DOC_COMMENT"> * SN = Sachsen&lt;br&gt;</token>
+      </line>
+      <line no="30">
+        <token name="T_DOC_COMMENT"> * ST = Sachsen-Anhalt&lt;br&gt;</token>
+      </line>
+      <line no="31">
+        <token name="T_DOC_COMMENT"> * SH = Schleswig-Holstein&lt;br&gt;</token>
+      </line>
+      <line no="32">
+        <token name="T_DOC_COMMENT"> * TH = Th&#xFC;ringen</token>
+      </line>
+      <line no="33">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="34"/>
+      <line no="35"/>
+      <line no="36">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="37">
+        <token name="T_DOC_COMMENT"> * Interface PublicHolidaysConstantsInterface</token>
+      </line>
+      <line no="38">
+        <token name="T_DOC_COMMENT"> * @package PublicHolidayInspector\Interfaces\De</token>
+      </line>
+      <line no="39">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="40">
+        <token name="T_INTERFACE">interface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidaysConstantsInterface</token>
+      </line>
+      <line no="41">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="42"/>
+      <line no="43">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_NEW_YEAR</token>
+        <token name="T_WHITESPACE">                     </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Neujahr'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="44">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_THREE_HOLY_KINGS</token>
+        <token name="T_WHITESPACE">             </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Heiligen drei K&#xF6;nige'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="45">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_GOOD_FRIDAY</token>
+        <token name="T_WHITESPACE">                  </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Karfreitag'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="46">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_EASTER_MONDAY</token>
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Ostermontag'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="47">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_EASTER_SUNDAY</token>
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Ostersonntag'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="48">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_LABOR_DAY</token>
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Erster Mai'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="49">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_ASCENSION_DAY</token>
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Christi Himmelfahrt'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="50">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_WHITSUNDAY</token>
+        <token name="T_WHITESPACE">                   </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Pfingstsonntag'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="51">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_WHITMONDAY</token>
+        <token name="T_WHITESPACE">                   </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Pfingstmontag'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="52">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_CORPUS_CHRISTI</token>
+        <token name="T_WHITESPACE">               </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Fronleichnam'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="53">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_MARY_ASCENSION</token>
+        <token name="T_WHITESPACE">               </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Mari&#xE4; Himmelfahrt'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="54">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_DAY_OF_GERMAN_UNITY</token>
+        <token name="T_WHITESPACE">          </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Tag der deutschen Einheit'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="55">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_REFORAMTION_DAY</token>
+        <token name="T_WHITESPACE">              </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Reformationstag'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="56">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_HALLOWEEN</token>
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Halloween'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="57">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_ALL_SAINTS_DAY</token>
+        <token name="T_WHITESPACE">               </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Allerheiligen'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="58">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_DAY_OF_PRAYER_AND_REPENTANCE</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Bu&#xDF;- und Bettag'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="59">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_CHRISTMAS_EVE</token>
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Heiliger Abend (Bankfeiertag)'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="60">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_1_CHRISTMAS_DAY</token>
+        <token name="T_WHITESPACE">              </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'1. Weihnachtstag'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="61">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_2_CHRISTMAS_DAY</token>
+        <token name="T_WHITESPACE">              </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'2. Weihnachtstag'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="62">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_NEW_YEARS_EVE</token>
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Silvester (Bankfeiertag)'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="63"/>
+      <line no="64">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_GERMAN_STATES</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="65">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_THREE_HOLY_KINGS</token>
+        <token name="T_WHITESPACE">             </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'BW'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'BY'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'ST'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="66">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_ALL_SAINTS_DAY</token>
+        <token name="T_WHITESPACE">               </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'BW'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'BY'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'NW'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'RB'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'SL'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="67">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_CORPUS_CHRISTI</token>
+        <token name="T_WHITESPACE">               </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'BW'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'BY'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'HE'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'NW'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'RP'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'SL'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'SN'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'TH'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="68">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_MARY_ASCENSION</token>
+        <token name="T_WHITESPACE">               </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'SL'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'BY'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="69">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_DAY_OF_PRAYER_AND_REPENTANCE</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'SN'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="70">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_REFORAMTION_DAY</token>
+        <token name="T_WHITESPACE">              </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'BB'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'MV'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'SN'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'ST'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'TH'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="71"/>
+      <line no="72">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="73"/>
+      <line no="74"/>
+      <line no="75">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="76"/>
+    </source>
+  </file>
+</phpunit>

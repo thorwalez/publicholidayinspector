@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="DayOfReferendum.php" path="/Day">
+    <totals>
+      <lines total="36" comments="19" code="17" executable="1" executed="1" percent="100.00"/>
+      <methods count="1" tested="1" percent="100.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="1" percent="100.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="PublicHolidayInspector\Day\DayOfReferendum" start="23" executable="1" executed="1" crap="1">
+      <package full="PublicHolidayInspector" name="PublicHolidayInspector" sub="" category=""/>
+      <namespace name="PublicHolidayInspector\Day"/>
+      <method name="equals" signature="equals($changeDate)" start="33" end="36" crap="1" executable="1" executed="1" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="35">
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="3">
+        <token name="T_DOC_COMMENT"> * Copyright (c) 2019.</token>
+      </line>
+      <line no="4">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="5">
+        <token name="T_DOC_COMMENT"> * Created By</token>
+      </line>
+      <line no="6">
+        <token name="T_DOC_COMMENT"> * @author Mike Hartl</token>
+      </line>
+      <line no="7">
+        <token name="T_DOC_COMMENT"> * @copyright 2019  Mike Hartl All rights reserved</token>
+      </line>
+      <line no="8">
+        <token name="T_DOC_COMMENT"> * @license  The source code of this document is proprietary work, and is not licensed for distribution or use.</token>
+      </line>
+      <line no="9">
+        <token name="T_DOC_COMMENT"> * @created 25.12.2019</token>
+      </line>
+      <line no="10">
+        <token name="T_DOC_COMMENT"> * @version 0.0.1</token>
+      </line>
+      <line no="11">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="12">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="13"/>
+      <line no="14">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidayInspector</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Day</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="15"/>
+      <line no="16"/>
+      <line no="17">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidayInspector</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Interfaces</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">At</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">PublicHolidaysConstantsInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="18"/>
+      <line no="19">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="20">
+        <token name="T_DOC_COMMENT"> * Class DayOfReferendum</token>
+      </line>
+      <line no="21">
+        <token name="T_DOC_COMMENT"> * @package PublicHolidayInspector\Day</token>
+      </line>
+      <line no="22">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="23">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">DayOfReferendum</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXTENDS">extends</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">EasterSunday</token>
+      </line>
+      <line no="24">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="25">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">FIX_PUBLIC_HOLIDAY_DAY_OF_REFERENDUM</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'10.10'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="26"/>
+      <line no="27">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">DAY_NAME</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidaysConstantsInterface</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_NAME_DAY_OF_REFERENDUM</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="28"/>
+      <line no="29">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="30">
+        <token name="T_DOC_COMMENT">     * @param string $changeDate</token>
+      </line>
+      <line no="31">
+        <token name="T_DOC_COMMENT">     * @return bool</token>
+      </line>
+      <line no="32">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="33">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">equals</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$changeDate</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="34">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="35">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$changeDate</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_EQUAL">==</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">FIX_PUBLIC_HOLIDAY_DAY_OF_REFERENDUM</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="36">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="37">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+    </source>
+  </file>
+</phpunit>

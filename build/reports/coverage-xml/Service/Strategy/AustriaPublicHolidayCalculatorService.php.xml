@@ -1,0 +1,1188 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="AustriaPublicHolidayCalculatorService.php" path="/Service/Strategy">
+    <totals>
+      <lines total="96" comments="33" code="63" executable="25" executed="25" percent="100.00"/>
+      <methods count="3" tested="3" percent="100.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="1" percent="100.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorService" start="23" executable="25" executed="25" crap="9">
+      <package full="PublicHolidayInspector" name="PublicHolidayInspector" sub="" category=""/>
+      <namespace name="PublicHolidayInspector\Service\Strategy"/>
+      <method name="calculate" signature="calculate(\DateTime $date = null, string $state = '') : string" start="32" end="58" crap="5" executable="14" executed="14" coverage="100"/>
+      <method name="calculateDynamicHolidays" signature="calculateDynamicHolidays(\DateTime $date, string $changeDate, string $austriaState = '')" start="67" end="77" crap="1" executable="4" executed="4" coverage="100"/>
+      <method name="federalState" signature="federalState(Holiday $day, string $federalState)" start="85" end="95" crap="3" executable="7" executed="7" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="34">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="35">
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+      </line>
+      <line nr="38">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="39">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="40">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="42">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="43">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="46">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="47">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="48">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+      </line>
+      <line nr="51">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="53">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="54">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="55">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="69">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="72">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorWorkingDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testDateIsNull"/>
+        <covered by="Test\PublicHolidayInspector\Service\UltimoDayCalculatorServiceTest::testNoUltimoDayFromDecemberForAustria"/>
+      </line>
+      <line nr="74">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+      </line>
+      <line nr="76">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+      </line>
+      <line nr="88">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+      </line>
+      <line nr="89">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+      </line>
+      <line nr="90">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+      </line>
+      <line nr="91">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+      </line>
+      <line nr="92">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+      </line>
+      <line nr="93">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithAustriaState"/>
+      </line>
+      <line nr="95">
+        <covered by="Test\PublicHolidayInspector\Service\PublicHolidayCalculatorServiceTest::testFixPublicHolidayMartinsDayWithOutAustriaState"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorEasterMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitSunday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorWhitMonday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorAscensionDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testNewHolidyCalculatorCorpusChristi"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorThreeHolyKings"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryAscension"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorAllSaintsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorChristmasEve"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFirstChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorSecondChristmansDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMaryConception"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNewYear"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorLeopoldiDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorMartinsDay"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorNationalHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorStaatHoliday"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorDayOfReferendum"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorRubert"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorFlorian"/>
+        <covered by="Test\PublicHolidayInspector\Service\Strategy\AustriaPublicHolidayCalculatorServiceTest::testCalculatorJosef"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="3">
+        <token name="T_DOC_COMMENT"> * Copyright (c) 2018.</token>
+      </line>
+      <line no="4">
+        <token name="T_DOC_COMMENT"> * Created By</token>
+      </line>
+      <line no="5">
+        <token name="T_DOC_COMMENT"> * @author    Mike Hartl</token>
+      </line>
+      <line no="6">
+        <token name="T_DOC_COMMENT"> * @copyright 2018  Mike Hartl All rights reserved</token>
+      </line>
+      <line no="7">
+        <token name="T_DOC_COMMENT"> * @license   The source code of this document is proprietary work, and is not licensed for distribution or use.</token>
+      </line>
+      <line no="8">
+        <token name="T_DOC_COMMENT"> * @created   13.06.18</token>
+      </line>
+      <line no="9">
+        <token name="T_DOC_COMMENT"> * @version   0.0.1</token>
+      </line>
+      <line no="10">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="11"/>
+      <line no="12">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidayInspector</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Service</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Strategy</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="13"/>
+      <line no="14">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidayInspector</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Collection</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">At</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">HolidayCollection</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="15">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidayInspector</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Day</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Holiday</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="16">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidayInspector</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Exception</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">NotFoundHolidayException</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="17">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidayInspector</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Interfaces</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">At</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">PublicHolidaysConstantsInterface</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="18"/>
+      <line no="19">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="20">
+        <token name="T_DOC_COMMENT"> * Class AustriaPublicHolidayCalculatorService</token>
+      </line>
+      <line no="21">
+        <token name="T_DOC_COMMENT"> * @package PublicHolidayInspector\Service\Strategy</token>
+      </line>
+      <line no="22">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="23">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">AustriaPublicHolidayCalculatorService</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXTENDS">extends</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">AbstractPublicHolidayCalculatorService</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IMPLEMENTS">implements</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidayCalculatorServiceInterface</token>
+      </line>
+      <line no="24">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="25"/>
+      <line no="26">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="27">
+        <token name="T_DOC_COMMENT">     * @param \DateTime|null $date</token>
+      </line>
+      <line no="28">
+        <token name="T_DOC_COMMENT">     * @param string         $state</token>
+      </line>
+      <line no="29">
+        <token name="T_DOC_COMMENT">     * @return string</token>
+      </line>
+      <line no="30">
+        <token name="T_DOC_COMMENT">     * @throws \Exception</token>
+      </line>
+      <line no="31">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="32">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">calculate</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">DateTime</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$date</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">null</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$state</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+      </line>
+      <line no="33">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="34">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$date</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_EQUAL">==</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">null</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="35">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$date</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">DateTime</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'NOW'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="36">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="37"/>
+      <line no="38">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$year</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$date</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">format</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Y'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="39">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$month</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$date</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">format</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'m'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="40">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$day</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$date</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">format</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'d'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="41"/>
+      <line no="42">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$datum_arr</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">getdate</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="43">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">mktime</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Holiday</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">DEFAULT_HOUR</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Holiday</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">DEFAULT_MINUTE</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Holiday</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">DEFAULT_SECOND</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$month</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$day</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$year</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="44">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="45"/>
+      <line no="46">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$status</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">DEFAULT_OUTPUT_WORKDAY</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="47">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$datum_arr</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'wday'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_EQUAL">==</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">WEEK_DAY_SUNDAY</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_BOOLEAN_OR">||</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$datum_arr</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'wday'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_EQUAL">==</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">WEEK_DAY_SATURDAY</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="48">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$status</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">self</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">DEFAULT_OUTPUT_WEEKEND</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="49">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="50"/>
+      <line no="51">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$changeDate</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$day</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOT">.</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'.'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOT">.</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$month</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="52">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_TRY">try</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="53">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">calculateDynamicHolidays</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$date</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$changeDate</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">strtoupper</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$state</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="54">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CATCH">catch</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">NotFoundHolidayException</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$ex</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="55">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$status</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="56">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="57"/>
+      <line no="58">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="59"/>
+      <line no="60">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="61">
+        <token name="T_DOC_COMMENT">     * @param \DateTime|null $date</token>
+      </line>
+      <line no="62">
+        <token name="T_DOC_COMMENT">     * @param string         $changeDate</token>
+      </line>
+      <line no="63">
+        <token name="T_DOC_COMMENT">     * @param string         $austriaState</token>
+      </line>
+      <line no="64">
+        <token name="T_DOC_COMMENT">     * @return string</token>
+      </line>
+      <line no="65">
+        <token name="T_DOC_COMMENT">     * @throws NotFoundHolidayException</token>
+      </line>
+      <line no="66">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="67">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PRIVATE">private</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">calculateDynamicHolidays</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">DateTime</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$date</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$changeDate</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$austriaState</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="68">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="69">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$collection</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">HolidayCollection</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$date</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="70"/>
+      <line no="71">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_DOC_COMMENT">/** @var Holiday $result */</token>
+      </line>
+      <line no="72">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$result</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$collection</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">equal</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$changeDate</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="73"/>
+      <line no="74">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">federalState</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$result</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$austriaState</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="75"/>
+      <line no="76">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$result</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="77">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="78"/>
+      <line no="79">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="80">
+        <token name="T_DOC_COMMENT">     * @param Holiday $day</token>
+      </line>
+      <line no="81">
+        <token name="T_DOC_COMMENT">     * @param string  $federalState</token>
+      </line>
+      <line no="82">
+        <token name="T_DOC_COMMENT">     * @return void</token>
+      </line>
+      <line no="83">
+        <token name="T_DOC_COMMENT">     * @throws NotFoundHolidayException</token>
+      </line>
+      <line no="84">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="85">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PRIVATE">private</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">federalState</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Holiday</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$day</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$federalState</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="86">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="87">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="88">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_ISSET">isset</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">PublicHolidaysConstantsInterface</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_AUSTRIA_STATES</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_STRING_CAST">(string)</token>
+        <token name="T_VARIABLE">$day</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+      </line>
+      <line no="89">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">in_array</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="90">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$federalState</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="91">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_STRING">PublicHolidaysConstantsInterface</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">PUBLIC_HOLIDAY_AUSTRIA_STATES</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_STRING_CAST">(string)</token>
+        <token name="T_VARIABLE">$day</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+      </line>
+      <line no="92">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_EQUAL">==</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="93">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_THROW">throw</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">NotFoundHolidayException</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Not found a holiday'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="94">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="95">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="96">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="97"/>
+    </source>
+  </file>
+</phpunit>

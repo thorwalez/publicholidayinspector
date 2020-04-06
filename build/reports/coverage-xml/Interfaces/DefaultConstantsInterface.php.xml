@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="DefaultConstantsInterface.php" path="/Interfaces">
+    <totals>
+      <lines total="24" comments="15" code="9" executable="0" executed="0" percent="0"/>
+      <methods count="0" tested="0" percent="0"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="0" tested="0" percent="0"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="3">
+        <token name="T_DOC_COMMENT"> * Copyright (c) 2018.</token>
+      </line>
+      <line no="4">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="5">
+        <token name="T_DOC_COMMENT"> * Created By</token>
+      </line>
+      <line no="6">
+        <token name="T_DOC_COMMENT"> * @author Mike Hartl</token>
+      </line>
+      <line no="7">
+        <token name="T_DOC_COMMENT"> * @copyright 2018  Mike Hartl All rights reserved</token>
+      </line>
+      <line no="8">
+        <token name="T_DOC_COMMENT"> * @license  The source code of this document is proprietary work, and is not licensed for distribution or use.</token>
+      </line>
+      <line no="9">
+        <token name="T_DOC_COMMENT"> * @created 13.06.18</token>
+      </line>
+      <line no="10">
+        <token name="T_DOC_COMMENT"> * @version 0.0.1</token>
+      </line>
+      <line no="11">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="12">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="13"/>
+      <line no="14">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">PublicHolidayInspector</token>
+        <token name="T_NS_SEPARATOR">\</token>
+        <token name="T_STRING">Interfaces</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="15"/>
+      <line no="16">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="17">
+        <token name="T_DOC_COMMENT"> * Interface DefaultConstantsInterface</token>
+      </line>
+      <line no="18">
+        <token name="T_DOC_COMMENT"> * @package PublicHolidayInspector\Interfaces</token>
+      </line>
+      <line no="19">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="20">
+        <token name="T_INTERFACE">interface</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">DefaultConstantsInterface</token>
+      </line>
+      <line no="21">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="22">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">DEFAULT_OUTPUT_WORKDAY</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Arbeitstag'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="23">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CONST">const</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">DEFAULT_OUTPUT_WEEKEND</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Wochenende'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="24">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="25"/>
+    </source>
+  </file>
+</phpunit>

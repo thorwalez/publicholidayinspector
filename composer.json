@@ -1,0 +1,58 @@
+{
+  "name": "thorwalez/publicholidayinspector",
+  "license": "proprietary",
+  "description": "Library to check if a date belongs to a holiday",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Mike Hartl",
+      "email": "mikehartl.mh@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "7.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "7.*",
+    "infection/infection": "0.9.0-beta.2",
+    "phpmetrics/composer-extension": "dev-master",
+    "phpmd/phpmd": "@stable",
+    "pdepend/pdepend": "2.2.4",
+    "squizlabs/php_codesniffer": "3.*",
+    "roave/security-advisories": "dev-master",
+    "phpmetrics/phpmetrics": "^2.5",
+    "phpstan/phpstan": "^0.12.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "PublicHolidayInspector\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\PublicHolidayInspector\\": "tests/"
+    }
+  },
+  "config": {
+    "vendor-dir": "vendor",
+    "bin-dir": "bin"
+  },
+  "scripts": {
+    "check": [
+      "@test",
+      "@test-coverage",
+      "@coverage",
+      "@phpmetrics"
+    ],
+    "test": "phpunit --colors=always --exclude-group=databasetest",
+    "test-db": "phpunit --colors=always --group=databasetest",
+    "test-debug": "phpunit --colors=always --debug",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+    "coverage": [
+      "phpunit --coverage-html=build/reports/coverage_html  --exclude-group=databasetest --coverage-xml=build/reports/coverage-xml --coverage-clover build/reports/clover.xml"
+    ],
+    "phpmetrics": [
+      "phpmetrics --plugins=./vendor/phpmetrics/composer-extension/ComposerExtension.php  --exclude=./tests  --junit=/var/www/app/build/reports/coverage-xml/index.xml --report-html=build/phpmetris_report.html ./src,./composer.json,./composer.lock"
+    ]
+  }
+}
