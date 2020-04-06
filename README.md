@@ -1,4 +1,4 @@
-# HolidayChecker
+# Public Holiday Inspector
 
 Ist eine Modul mit dem es möglich ist ein Datum auf folgende Kriterien zu überprüfen:
 
